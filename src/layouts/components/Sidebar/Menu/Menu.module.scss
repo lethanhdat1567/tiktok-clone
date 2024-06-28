@@ -1,0 +1,29 @@
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    gap: 10px;
+    border-radius: 4px;
+    transition: background-color ease 0.4s;
+    &.active {
+        color: var(--primary);
+        .icon {
+            display: none;
+        }
+        .active-icon {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+.icon {
+    display: flex;
+}
+.active-icon {
+    display: none;
+}
